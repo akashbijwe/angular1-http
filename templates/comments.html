@@ -1,0 +1,19 @@
+
+<div class="row mt10" ng-repeat="comment in comments">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <a href="#posts/post/{{comment.postId}}" class="pr10">
+          &#8592; 
+          Back
+        </a>
+        <b>
+          Post Id: {{comment.postId}}
+        </b>
+      </div>
+      <div class="panel-body">
+        <b>Name:</b> {{comment.name}} <br><br>
+        <b>Email:</b> {{comment.email}} <br>
+        <b>Body: </b> {{comment.body}}
+      </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="col-md-3 col-lg-3">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <a href="#posts" class="pr10">
+            &#8592; 
+            Back
+        </a>
+      <b>
+        Post Id: {{post.id}}
+      </b>
+    </div>
+    <div class="panel-body">
+      <b>Title:</b> {{post.title}} <br><br>
+      <b>Description:</b> {{post.body}} <br>
+      <b>User Id: </b> {{post.userId}}
+      <div class="mt10">
+        <a href="#posts/post/{{post.id}}/comments">
+          <span class="label label-primary">Comments</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

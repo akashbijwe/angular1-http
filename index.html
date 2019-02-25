@@ -1,0 +1,30 @@
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="js/api.js"></script>
+  </head>
+  <body ng-app="myModule">
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#/">API Examples</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#/posts">posts</a></li>
+            <li><a href="#/users">Users</a></li>
+            <li><a href="#/photos">Photos</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section>
+        <div class="container pr">
+          <div ng-view></div>
+        </div>
+      </section>
+  </body>
+</html>
